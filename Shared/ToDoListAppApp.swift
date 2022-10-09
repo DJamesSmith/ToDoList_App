@@ -1,10 +1,3 @@
-//
-//  ToDoListAppApp.swift
-//  Shared
-//
-//  Created by mac on 30/09/22.
-//
-
 import SwiftUI
 
 @main
@@ -13,8 +6,13 @@ struct ToDoListAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            let context = persistenceController.container.viewContext
+            let dateHolder = DateHolder(context)
+            
+            TaskListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(dateHolder)
         }
     }
 }
