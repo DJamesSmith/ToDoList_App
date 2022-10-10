@@ -10,6 +10,14 @@ struct TaskCell: View {
         
         Text(passedTaskItem.name ?? "")
             .padding(.horizontal)
+        
+        if !passedTaskItem.isCompleted() && passedTaskItem.scheduleTime {
+            Spacer()
+            Text(passedTaskItem.dueDateTimeOnly())
+                .font(.footnote)
+                .foregroundColor(passedTaskItem.overDueColor())
+                .padding(.horizontal)
+        }
     }
 }
 
