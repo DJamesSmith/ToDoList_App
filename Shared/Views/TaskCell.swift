@@ -6,17 +6,19 @@ struct TaskCell: View {
     @ObservedObject var passedTaskItem: TaskItem
     
     var body: some View {
-        CheckBoxView(passedTaskItem: passedTaskItem).environmentObject(dateHolder)
-        
-        Text(passedTaskItem.name ?? "")
-            .padding(.horizontal)
-        
-        if !passedTaskItem.isCompleted() && passedTaskItem.scheduleTime {
-            Spacer()
-            Text(passedTaskItem.dueDateTimeOnly())
-                .font(.footnote)
-                .foregroundColor(passedTaskItem.overDueColor())
+        HStack {
+            CheckBoxView(passedTaskItem: passedTaskItem).environmentObject(dateHolder)
+            
+            Text(passedTaskItem.name ?? "")
                 .padding(.horizontal)
+            
+            if !passedTaskItem.isCompleted() && passedTaskItem.scheduleTime {
+                Spacer()
+                Text(passedTaskItem.dueDateTimeOnly())
+                    .font(.footnote)
+                    .foregroundColor(passedTaskItem.overDueColor())
+                    .padding(.horizontal)
+            }
         }
     }
 }

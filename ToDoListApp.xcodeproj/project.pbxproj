@@ -29,6 +29,10 @@
 		0484BCC128E72B330094D1F2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484BCAB28E72B310094D1F2 /* Persistence.swift */; };
 		0484BCC228E72B330094D1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484BCAC28E72B330094D1F2 /* Assets.xcassets */; };
 		0484BCC328E72B330094D1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484BCAC28E72B330094D1F2 /* Assets.xcassets */; };
+		04A33AC7295A16E600CBB14C /* DateScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A33AC6295A16E600CBB14C /* DateScroller.swift */; };
+		04A33AC8295A16E600CBB14C /* DateScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A33AC6295A16E600CBB14C /* DateScroller.swift */; };
+		04A33ACA295A2E6F00CBB14C /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A33AC9295A2E6F00CBB14C /* TaskFilter.swift */; };
+		04A33ACB295A2E6F00CBB14C /* TaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A33AC9295A2E6F00CBB14C /* TaskFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,8 @@
 		0484BCB128E72B330094D1F2 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484BCB728E72B330094D1F2 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484BCB928E72B330094D1F2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		04A33AC6295A16E600CBB14C /* DateScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateScroller.swift; sourceTree = "<group>"; };
+		04A33AC9295A2E6F00CBB14C /* TaskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 				0414E27028F32D5500C339CD /* CheckBoxView.swift */,
 				0414E26328F2F95A00C339CD /* FloatingButton.swift */,
 				0414E26728F2FA5F00C339CD /* TaskEditView.swift */,
+				04A33AC6295A16E600CBB14C /* DateScroller.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +90,7 @@
 			children = (
 				0484BCAB28E72B310094D1F2 /* Persistence.swift */,
 				0414E27428F32F3600C339CD /* TaskItemExtension.swift */,
+				04A33AC9295A2E6F00CBB14C /* TaskFilter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,9 +236,11 @@
 				0414E27528F32F3600C339CD /* TaskItemExtension.swift in Sources */,
 				0484BCBA28E72B330094D1F2 /* ToDoListApp.xcdatamodeld in Sources */,
 				0484BCC028E72B330094D1F2 /* Persistence.swift in Sources */,
+				04A33ACA295A2E6F00CBB14C /* TaskFilter.swift in Sources */,
 				0414E26428F2F95A00C339CD /* FloatingButton.swift in Sources */,
 				0414E27128F32D5500C339CD /* CheckBoxView.swift in Sources */,
 				0414E26E28F32B1200C339CD /* TaskCell.swift in Sources */,
+				04A33AC7295A16E600CBB14C /* DateScroller.swift in Sources */,
 				0414E26828F2FA5F00C339CD /* TaskEditView.swift in Sources */,
 				0484BCBC28E72B330094D1F2 /* ToDoListAppApp.swift in Sources */,
 				0484BCBE28E72B330094D1F2 /* TaskListView.swift in Sources */,
@@ -245,9 +255,11 @@
 				0414E27628F32F3600C339CD /* TaskItemExtension.swift in Sources */,
 				0484BCBB28E72B330094D1F2 /* ToDoListApp.xcdatamodeld in Sources */,
 				0484BCC128E72B330094D1F2 /* Persistence.swift in Sources */,
+				04A33ACB295A2E6F00CBB14C /* TaskFilter.swift in Sources */,
 				0414E26528F2F95A00C339CD /* FloatingButton.swift in Sources */,
 				0414E27228F32D5500C339CD /* CheckBoxView.swift in Sources */,
 				0414E26F28F32B1200C339CD /* TaskCell.swift in Sources */,
+				04A33AC8295A16E600CBB14C /* DateScroller.swift in Sources */,
 				0414E26928F2FA5F00C339CD /* TaskEditView.swift in Sources */,
 				0484BCBD28E72B330094D1F2 /* ToDoListAppApp.swift in Sources */,
 				0484BCBF28E72B330094D1F2 /* TaskListView.swift in Sources */,
